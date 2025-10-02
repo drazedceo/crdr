@@ -176,6 +176,56 @@ body {
   transition: var(--theme-transition);
 }
 
+/* Change grey text to white in dark mode */
+[data-theme="dark"] .text-gray {
+  color: #FFFFFF !important;
+}
+
+/* Target all grey/muted text elements in dark mode */
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .card-text {
+  color: #FFFFFF !important;
+}
+
+/* Grey colored paragraphs */
+[data-theme="dark"] p[style*="color: #757575"],
+[data-theme="dark"] p[style*="color: rgb(117, 117, 117)"] {
+  color: #FFFFFF !important;
+}
+
+/* All neutral grey text colors */
+[data-theme="dark"] .neutral-600,
+[data-theme="dark"] [class*="text-neutral"],
+[data-theme="dark"] .opacity-60,
+[data-theme="dark"] .opacity-80 {
+  color: #FFFFFF !important;
+}
+
+/* Hero section grey text */
+[data-theme="dark"] .hero-tagline,
+[data-theme="dark"] .hero p {
+  color: #FFFFFF !important;
+}
+
+/* Footer grey text */
+[data-theme="dark"] .footer-section p,
+[data-theme="dark"] .footer-section a,
+[data-theme="dark"] .footer-bottom {
+  color: #FFFFFF !important;
+}
+
+/* Timeline and process grey text */
+[data-theme="dark"] .timeline-content p,
+[data-theme="dark"] .process-step p {
+  color: #000000 !important;
+}
+
+/* Stat items description text */
+[data-theme="dark"] .stat-item p {
+  color: #FFFFFF !important;
+  opacity: 1;
+}
+
 /* Section Headings in Dark Mode */
 [data-theme="dark"] .section-title,
 [data-theme="dark"] h1,
